@@ -27,8 +27,8 @@ public class GuessNumber {
         System.out.println("Du hast die Zahl nach " + counter + " Versuchen erraten.");
     }
 
-    private static void computerGuess(int parseInt) {
-        int counter = 1;
+    private static void computerGuess(int parseInt) {       // this need to be implemented with binary search to
+        int counter = 1;                                    // guess in minimum attempt
         int guess = 0;
 
         while (guess != parseInt){

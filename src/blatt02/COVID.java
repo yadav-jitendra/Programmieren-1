@@ -19,9 +19,9 @@ public class COVID {
         String[] nameOfCol = fileReader.nextLine().split(",");
 
         int numOfRows = 0;
-        while (fileReader.hasNextLine()){
+        while (fileReader.hasNextLine()) {
             fileReader.nextLine();
-            numOfRows++ ;
+            numOfRows++;
         }
 
         String[][] dataEachLine = new String[numOfRows][nameOfCol.length];
@@ -35,7 +35,7 @@ public class COVID {
         }
 
         numOfRows = 0;
-        while (fileReader.hasNextLine()){
+        while (fileReader.hasNextLine()) {
             dataEachLine[numOfRows] = fileReader.nextLine().split(",");
             numOfRows++;
         }
@@ -43,7 +43,7 @@ public class COVID {
 
         int totalCured = 0;
 
-        for (String[] eachLine : dataEachLine){
+        for (String[] eachLine : dataEachLine) {
             totalCured += Integer.parseInt(eachLine[9]);
 
         }
