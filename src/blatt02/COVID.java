@@ -27,7 +27,7 @@ public class COVID {
         String[][] dataEachLine = new String[numOfRows][nameOfCol.length];
 
         fileReader = null;          // this block is to skip first row i.e Header
-        try {
+        try {                       // Need better way of doing this
             fileReader = new Scanner(file);
             fileReader.nextLine();
         } catch (FileNotFoundException e) {
