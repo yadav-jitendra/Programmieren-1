@@ -24,31 +24,31 @@ public class COVID {
             numOfRows++;
         }
 
-//        String[][] dataEachLine = new String[numOfRows][nameOfCol.length];
-//
-//        fileReader = null;          // this block is to skip first row i.e Header
-//        try {                       // Need better way of doing this
-//            fileReader = new Scanner(file);
-//            fileReader.nextLine();
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//
-//        numOfRows = 0;
-//        while (fileReader.hasNextLine()) {
-//            dataEachLine[numOfRows] = fileReader.nextLine().split(",");
-//            numOfRows++;
-//        }
-//
-//
-//        int totalCured = 0;
-//
-//        for (String[] eachLine : dataEachLine) {
-//            totalCured += Integer.parseInt(eachLine[9]);
-//
-//        }
-//
-//        System.out.println("Total Cured = " + totalCured);
+        String[][] dataEachLine = new String[numOfRows][nameOfCol.length];
+
+        fileReader = null;          // this block is to skip first row i.e Header
+        try {                       // Need better way of doing this
+            fileReader = new Scanner(file);
+            fileReader.nextLine();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        numOfRows = 0;
+        while (fileReader.hasNextLine()) {
+            dataEachLine[numOfRows] = fileReader.nextLine().split(",");
+            numOfRows++;
+        }
+
+
+        int totalCured = 0;
+
+        for (String[] eachLine : dataEachLine) {
+            totalCured += Integer.parseInt(eachLine[9]);
+
+        }
+
+        System.out.println("Total Cured = " + totalCured);
 
 
     }
