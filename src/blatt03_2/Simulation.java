@@ -48,14 +48,14 @@ public class Simulation {
                         System.out.println(animal.getName() + " is getting Food ");
 
                     } else {
-                        System.out.println("Not enough food for " + animal.getName() + "available");
+                        System.out.println("Not enough food for " + animal.getName() + " available");
                         return;
                     }
 
                     if (zoo.provideWater(animal)) {
-                        System.out.println(animal.getName() + " is getting Food");
+                        System.out.println(animal.getName() + " is getting Water");
                     } else {
-                        System.out.println("Not enough food for " + animal.getName() + " available");
+                        System.out.println("Not enough water for " + animal.getName() + " available");
                         return;
                     }
                 }
