@@ -5,14 +5,17 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Haeufigkeit {
-    private static final String FILE_NAME = "text.txt";
+    private static final String FILE_NAME = "german.txt";       // most frequent letter : e
+    private static final String FILE_NAME2 = "english.txt";     // most frequent letter : e
+    private static final String FILE_NAME3 = "hindi.txt";       // most frequent letter : ा = aa ki matra
+
 
     public static void main(String[] args) {
         int rows = 256;
         int col = 2;
         int[][] array = new int[rows][col];
 
-        File file = new File(FILE_NAME);
+        File file = new File(FILE_NAME3);
         Scanner fileReader = null;
         try {
             fileReader = new Scanner(file);
