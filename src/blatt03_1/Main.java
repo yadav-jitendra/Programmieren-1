@@ -13,6 +13,8 @@ public class Main {
         System.out.println("Auto1 has of speed: "+ auto1.getSpeed());
         System.out.println("Auto2 has of speed: "+ auto2.getSpeed());
         System.out.println();
+        System.out.println(auto1);
+        System.out.println(auto2);
         System.out.println(auto1.equals(auto2));
 
     }

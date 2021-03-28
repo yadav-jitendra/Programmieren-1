@@ -34,4 +34,11 @@ public class Auto {
         this.speed = speed;
     }
 
+    @Override
+    public String toString() {
+        return "Auto{" +
+                "color='" + color + '\'' +
+                ", speed=" + speed +
+                '}';
+    }
 }
