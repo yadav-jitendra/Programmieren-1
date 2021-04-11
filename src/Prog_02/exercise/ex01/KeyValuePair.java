@@ -1,4 +1,4 @@
-package Prog_02.exercise.ex01;
+package ex01;
 
 public class KeyValuePair {
     private final String key;
